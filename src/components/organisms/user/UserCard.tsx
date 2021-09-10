@@ -1,4 +1,4 @@
-import { VFC, memo, ReactNode } from 'react'
+import { VFC, memo } from 'react'
 import { Box, Image, Stack, Text } from '@chakra-ui/react'
 
 type Props = {
@@ -12,12 +12,12 @@ const UserCard: VFC<Props> = memo((props) => {
 
   return (
     <Box
-      bg="white"
-      borderRadius="8px"
+      w="256px"
       h="256px"
       p={4}
+      bg="white"
+      borderRadius="8px"
       shadow="md"
-      w="256px"
       _hover={{ cursor: "pointer", opacity: 0.8 }}
     >
       <Stack textAlign="center">
